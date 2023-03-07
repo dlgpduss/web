@@ -1,0 +1,77 @@
+/* body {
+    margin: 10%;
+} */
+header {
+    margin-bottom: 64px;
+}
+
+h1 {
+    font-size: 48px;
+    color: rgb(71, 62, 62);
+    margin: 0;
+}
+
+h2 {
+    font-size: 34px;
+    margin: 21px 0;
+    color: rgb(73, 13, 5);
+}
+
+header .link{
+    padding: 12px 48px;
+    background-color: rgb(167, 1, 78);
+    color: white;
+    border: 1px solid rgb(167, 1, 78);
+    border-radius: 4px;
+    font-size: 24px;
+    display: inline-block;
+}
+
+header a:hover {
+    background-color: rgb(180, 12, 90);
+    text-decoration: none;
+}
+
+ul a {
+    color:maroon;
+}
+
+ul a:hover {
+    color: rgb(225, 65, 65);
+}
+
+ul {
+    list-style: none;
+    width: 800px;
+    margin: 36px auto 0 auto;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 48px;
+    background-color: rgb(223, 136, 124);
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.firstgoal,
+.secondgoal {
+    font-size: 28px;
+    font-family: "Fira Sans", sans-serif;
+    color: rgb(71, 29, 22);
+}
+
+.firstgoal p {
+    margin: 21px 0 6px 0;
+}
+
+.firstgoal a {
+    display: inline-block;
+    margin-bottom: 28px;
+}
+
+.secondgoal p {
+    margin-top: 21px;
+    margin-bottom: 28px;
+}
