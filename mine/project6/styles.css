@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(220, 235, 235);
+    font-family: 'Golos Text', sans-serif;
+}
+
+h1 {
+    margin: 2rem;
+    text-align: center;
+}
+
+form {
+    width: 30rem;
+    background-color: rgb(245, 245, 245);
+    margin: auto;
+    padding:  2rem 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(54, 54, 54, 0.1);
+}
+
+h2 {
+    text-align: left;
+    margin: 0 0 1rem 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, 
+textarea,
+select {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid rgb(216, 214, 214);
+    border-radius: 4px;
+    font: inherit;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: rgb(213, 243, 243);
+    border: 1px solid rgb(213, 243, 243);
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+.inline-control {
+    display: flex;
+}
+
+.inline-control label {
+    margin: 0.5rem;
+}
+
+.inline-control input {
+    width: auto;
+}
+
+button {
+    font:inherit;
+    border: 1px solid rgb(107, 180, 240);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#buttons {
+    text-align: right;
+}
+
+.btn-filed {
+    background-color: rgb(107, 180, 240);
+    color: white;
+}
+
+.btn-empty {
+    background-color: transparent;
+    color: rgb(107, 180, 240);
+}
+
+.btn-filed:hover {
+    background-color: rgb(142, 190, 230);
+    border-color: rgb(142, 190, 230);
+}
+
+.btn-empty:hover {
+    background-color: rgb(213, 223, 245);
+}
