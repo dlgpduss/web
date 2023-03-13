@@ -4,14 +4,25 @@
 //    - Select the first button without adding or using any "id"
 //    - Select the second button by using an "id"
 
-
+const firstButton = document.querySelector("button");
+const secondButton = document.getElementById("second-button");
 
 // 2) Add "click" event listener to both buttons (with two different functions).
 //    The functions should "console.dir()" the clicked buttons.
 //    - Output the first button by using the variable in which it's stored
 //    - Output the second button WITHOUT using the variable in which it's stored
 
+function firstButtonClick() {
+    console.dir(firstButton);
+}
 
+firstButton.addEventListener("click", firstButtonClick);
+
+function secondButtonClick(event) {
+    console.dir(event.target);
+}
+
+secondButton.addEventListener("click", secondButtonClick);
 
 // 3) Now select and store the paragraphs mentioned in the text you see on the page
 //    (first and third paragraph)
@@ -19,11 +30,28 @@
 //      mentioned elements
 //    - If you struggle with DOM drilling, use "ids" instead but watch the solution!
 
+let firstParagraph = document.body.children[2].children[1];
+let thirdParagraph = document.body.children[2].children[3];
 
+// let thirdParagraphElement = firstParagraph.nextElementSibling.nextElementSibling;
 
 // 4) Change the functions from (2) such that:
 //    - The first button removes the third paragraph (i.e. the <p> prior to it)
 //    - The second button changes the background color of the first paragraph to blue
+function firstButtonClick() {
+    thirdParagraph.remove();
+    // thirdParagraph.textContent = "";
+}
+
+firstButton.addEventListener("click", firstButtonClick)
+
+function secondButtonClick() {
+    // firstParagraph.style.backgroundColor = "blue";
+    // firstParagraph.className = "blue-bg";
+    firstParagraph.classList.add('blue-bg');
+}
+
+secondButton.addEventListener("click", secondButtonClick);
 
 
 
