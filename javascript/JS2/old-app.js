@@ -43,3 +43,5 @@ firstParagraph.parentElement.append(firstParagraph);
 console.log(firstParagraph.innerHTML);
 
 firstParagraph.innerHTML = "Hi! This is <strong>important!</strong>."
+
+// git
